@@ -13,6 +13,7 @@ public class TestBase {
     MenuSection menuSection = new MenuSection();
     ProjectSection projectSection = new ProjectSection();
     MenuProjectSection menuProjectSection = new MenuProjectSection();
+    TaskSection taskSection = new TaskSection();
 
     String user = GetProperties.getInstance().getUser();
     String password = GetProperties.getInstance().getPwd();
