@@ -2,9 +2,7 @@ package testSuite.todoist;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import page.todoist.LoginPage;
-import page.todoist.MainPage;
-import page.todoist.MenuSection;
+import page.todoist.*;
 import session.Session;
 import util.GetProperties;
 
@@ -13,6 +11,8 @@ public class TestBase {
     LoginPage loginPage = new LoginPage();
     MainPage mainPage = new MainPage();
     MenuSection menuSection = new MenuSection();
+    ProjectSection projectSection = new ProjectSection();
+    MenuProjectSection menuProjectSection = new MenuProjectSection();
 
     String user = GetProperties.getInstance().getUser();
     String password = GetProperties.getInstance().getPwd();
