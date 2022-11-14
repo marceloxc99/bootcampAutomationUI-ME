@@ -34,6 +34,6 @@ public class CRUDProjectTest extends TestBase{
         menuProjectSection.deleteProject.click();
         projectSection.deleteConfirm.click();
         projectSection.getProject(projectUpdated).waitControlIsNotInThePage();
-        Assertions.assertFalse(projectSection.isProjectDisplayedInList(projectUpdated));
+        Assertions.assertFalse(projectSection.isProjectDisplayedInList(projectUpdated), "ERROR! Project was not deleted");
     }
 }
