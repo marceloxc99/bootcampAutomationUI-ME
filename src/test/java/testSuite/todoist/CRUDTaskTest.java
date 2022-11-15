@@ -8,7 +8,7 @@ import java.util.Date;
 public class CRUDTaskTest extends TestBase{
 
     @Test
-    public void verifyCRUDTask() throws InterruptedException {
+    public void verifyCRUDTask(){
         String projectCreated="ProjectTask"+new Date().getTime();
         String taskCreated="NewTask"+new Date().getTime();
         String taskUpdated="TaskUpdated"+new Date().getTime();
